@@ -9,4 +9,7 @@ A branch is a way to add edits to a file/repository while not changing the origi
 * What is a commit? What makes a good commit message?
 A commit is basically creating a savepoint for your project. A good commit message will include *detailed* information about the changed you made. Should be specific enough to where someone else can read them and understand the changes.
 * What is a merge conflict?
-A merge conflict is when two changes are made that contradict one another. For example, one person changes a line with a different value and the other person changes the same line with a different value. Git doesn't know which one to use so it causes a merge conflict
+A merge conflict is when two changes are made that contradict one another. For example, one person changes a line with a different value and the other person changes the same line with a different value. Git doesn't know which one to use so it causes a merge conflict 
+
+$$$$$
+
