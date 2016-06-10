@@ -1,0 +1,31 @@
+
+
+body {
+
+
+
+
+}
+
+img:nth-child(3) {
+     position: relative;
+     margin-top: -100px;
+     margin-left: 800px;
+    
+}
+
+img:nth-child(2) {
+	position: relative;
+    margin-top: 0px;
+    margin-left: 775px;
+    z-index: 1;
+
+}
+
+img:nth-child(1) {
+	 position: absolute;
+     margin-top: 165px;
+     margin-left: 842px;
+     z-index: 2;
+
+}
