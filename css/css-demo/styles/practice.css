@@ -1,0 +1,39 @@
+#contact-info {
+ font-size: 0.8em;
+}
+
+.job {
+  background-color: #e9e5dc;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
+
+
+}
+
+.small {
+
+	font-size: .8em;
+}
+
+a:hover {
+	color: yellow;
+
+}
+
+p:first-child {
+	color: yellow;
+}
+
+/*
+1.The more specific styles are applied to that piece of HTML. The styles "cascade" or are passed down the code and the most direct one overrides the more general one. 
+2.A psuedo-class is the state of the element after interaction (i.e clicking, hovering, visited, unvisited etc.) For the resume we changed the email to a link and changed the color to yellow when hovered over. 
+a:hover {
+	color: yellow;
+}
+3. If I wanted to select a specific paragraph and only apply css to that paragraph (in our example the phone number), we used
+p:first-child {
+	color: yellow;
+}
+
+*\
