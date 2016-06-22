@@ -66,11 +66,11 @@
 
 array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-array2.drop_while do |number| 
-	number < 3 
-end 
 
-p array2
+array3 = array2.drop_while { |number|  number < 5 }   
+p array3
+
+
 
 
 
