@@ -31,41 +31,51 @@ p "Type any values you want to change. If none, type none."
 
 answer = gets.chomp
 
-none = "none"
 
 
-while answer != none
 
-	if answer == name
+until answer == "none"
+
+	if answer = name
 		p "Input Name"
 		name = gets.chomp
-
+		
+	
 	elsif answer == age
 		p "Input Age"
 		age = gets.chomp
+		
 	
-	elsif answer == children
-		p "Input Number of Children"
-		children = get.chomp
+	elsif answer == "children"
 		p "Input number of children"
 		children = gets.chomp
-
-	elsif answer == theme
+		
+	
+	elsif answer == "theme"
 		p "Input theme"
 		theme = gets.chomp
-
-	elsif answer == color
+		
+	
+	elsif answer == "color"
 		p "Input Color"
 		color = gets.chomp
+		
 	
-	elsif answer == dog
+	elsif answer == "dog"
 		p "Input Dog (Yes/No)"
 		dog = gets.chomp
+		
+	
+	else answer == "none"
+
 	end
+	
+
 	
 end
 
 p array1
+
 #convert to appropriate data type
 #print hash inputs
 #prompt user to update values
