@@ -1,82 +1,50 @@
 #ask user for information with gets.chomp
 
-
 p "Name"
 name = gets.chomp
-array1 = [name]
+
 
 p "Age"
 age = gets.to_i
-array1 << [age]
+
 
 p "Number of children"
 children = gets.to_i
-array1 << [children]
+
 
 p "Decor theme"
 theme = gets.chomp
-array1 << [theme]
 
 p "Favorite color"
 color = gets.chomp
-array1 << [color]
+
 
 p "Dog? (Yes/No)"
 dog = gets.chomp
-array1 << [dog]
-
-p array1
-
-p "Type any values you want to change. If none, type none."
-
-answer = gets.chomp
 
 
+#compile in to hash
+applicant_info = {user_name: name, user_age: age, user_children: children, user_decor: theme, user_color: color, user_dog: dog}
+#print hash inputs
+p applicant_info
 
+#ask for value change
+p "Would you like to change in answers? If none, type none."
+answer = gets.chomp.to_sym
 
-until answer == "none"
-
-	if answer = name
-		p "Input Name"
-		name = gets.chomp
-		
-	
-	elsif answer == age
-		p "Input Age"
-		age = gets.chomp
-		
-	
-	elsif answer == "children"
-		p "Input number of children"
-		children = gets.chomp
-		
-	
-	elsif answer == "theme"
-		p "Input theme"
-		theme = gets.chomp
-		
-	
-	elsif answer == "color"
-		p "Input Color"
-		color = gets.chomp
-		
-	
-	elsif answer == "dog"
-		p "Input Dog (Yes/No)"
-		dog = gets.chomp
-		
-	
-	else answer == "none"
-
-	end
-	
-
-	
+#ask for the new value
+if answer == "none"
+	puts "Thank you"
+else
+	p "Enter what new value you want for #{applicant_info}"
+	answer2 = gets.chomp.to_sym
+	#put in to new existing hash
+	applicant_info[answer] = answer2
 end
 
-p array1
+#print it
+p applicant_info
 
-#convert to appropriate data type
-#print hash inputs
+
 #prompt user to update values
 #print again
