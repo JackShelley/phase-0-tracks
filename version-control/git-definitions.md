@@ -11,5 +11,5 @@ A commit is basically creating a save point for your project. A good commit mess
 * What is a merge conflict?
 A merge conflict is when two changes are made that contradict one another. For example, one person changes a line with a different value and the other person changes the same line with a different value. Git doesn't know which one to use so it causes a merge conflict 
 
-$$$$$$
+$$$$$$$
 
